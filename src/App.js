@@ -1,10 +1,10 @@
 
 import './App.css';
-import IterationSample from './education/IterationSample';
+import WeatherSearch from './weather/WeatherSearch';
 
 function App() {
   return (
-    <IterationSample />
+    <WeatherSearch />
   );
 }
 
