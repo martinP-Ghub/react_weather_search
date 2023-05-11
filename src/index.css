@@ -28,7 +28,88 @@ code {
   border-radius: 30px;
 }
 
+.weatherArea .searchInput{
+  border: 4px solid #cff;
+  height: 40px;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.weatherArea .inputBox{
+  border: none;
+  height: 30px;
+  font-size: 16px;
+  text-transform: capitalize; 
+}
+.weatherArea .inputBox:hover{
+  border: none;
+}
+
+
+.weatherArea .weatherInfo .cityName{
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.weatherArea .weatherInfo .desc{
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.weatherArea .weatherInfo .flag{
+  background-image: url('/public/icon/flag1.png');
+  animation: flag ;
+}
+
+.weatherArea .weatherInfo .thermAndWind{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+}
+
+.weatherArea .weatherInfo .thermAndWind .turbine{
+  animation-name: rotate;
+  animation-duration: 2s; 
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+
+.weatherArea .weatherInfo .thermAndWind div{
+  display: flex;
+  align-items: center;
+}
+
+.weatherArea .weatherInfo .thermAndWind div .windDirection{
+  width: 20px;
+  padding: 0 10px;
+}
+
 .weatherInfo.none{
   display: none;
 
+}
+
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flag {
+  from {
+    background-image: url('/public/icon/flag1.png');
+  }
+  to {
+    background-image: url('/public/icon/flag2.png');
+  }
 }
