@@ -17,7 +17,8 @@ code {
 }
 
 .weatherArea{
-  width: 300px;
+  width: auto;
+  max-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,21 +29,27 @@ code {
   border-radius: 30px;
 }
 
-.weatherArea .searchInput{
-  border: 4px solid #cff;
-  height: 40px;
+.weatherArea .searchBox{
+  display: flex;
+  align-items: center;
+  border: 1px solid #9defff;
   border-radius: 25px;
-  padding: 5px;
 }
 
-.weatherArea .inputBox{
+
+.weatherArea input[type='search']{
   border: none;
   height: 30px;
   font-size: 16px;
+  margin: 5px 10px;
   text-transform: capitalize; 
+  outline: none;
+  display: none;
 }
-.weatherArea .inputBox:hover{
+
+.weatherArea .searchBtn{
   border: none;
+  background-color: transparent;
 }
 
 
