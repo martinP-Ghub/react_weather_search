@@ -67,10 +67,6 @@ code {
   margin-bottom: 30px;
 }
 
-.weatherArea .weatherInfo .flag{
-  background-image: url('/public/icon/flag1.png');
-  animation: flag ;
-}
 
 .weatherArea .weatherInfo .thermAndWind{
   display: flex;
@@ -112,11 +108,3 @@ code {
   }
 }
 
-@keyframes flag {
-  from {
-    background-image: url('/public/icon/flag1.png');
-  }
-  to {
-    background-image: url('/public/icon/flag2.png');
-  }
-}
